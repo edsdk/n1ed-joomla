@@ -10,9 +10,8 @@
   <license></license>
   <description>PLG_N1ED_KEY_DESC</description>
   <scriptfile>script.n1ed.php</scriptfile>
-  <update>https://n1ed.com/joomla_update/update.xml</update>
   <updateservers>
-    <server type="extension" name="N1ED" priority="1">https://n1ed.com/joomla_update/n1ed.xml</server>
+    <server type="extension" name="N1ED" priority="1">https://cdn.n1ed.com/joomla_updates/n1ed.xml</server>
   </updateservers>
   <files>
     <filename plugin="n1ed">n1ed.php</filename>
