@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension version="3.1" type="plugin" group="editors" method="upgrade">
   <name>N1ED</name>
-  <version>1.1.0</version>
+  <version>1.2.0</version>
   <creationDate>2018</creationDate>
   <author>EdSDK</author>
   <authorEmail>info@n1ed.com</authorEmail>
@@ -17,7 +17,6 @@
     <filename plugin="n1ed">n1ed.php</filename>
     <folder>fields</folder>
     <folder>rules</folder>
-    <folder>uploader</folder>
   </files>
   <languages folder="language">
     <language tag="en-GB" >en-GB/en-GB.plg_editors_n1ed.ini</language>

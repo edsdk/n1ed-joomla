@@ -18,11 +18,23 @@ class plgEditorsN1edInstallerScript
     if(!JFolder::exists($n1ed_files)) {
       JFolder::create($n1ed_files);
     }
+      
+    $n1ed_uploads = JPATH_ROOT . '/images/n1ed/uploads';
+
+    if(!JFolder::exists($n1ed_uploads)) {
+      JFolder::create($n1ed_uploads);
+    }
 
     $n1ed_tmp = JPATH_ROOT . '/images/n1ed_tmp';
 
     if(!JFolder::exists($n1ed_tmp)) {
       JFolder::create($n1ed_tmp);
+    }
+      
+    $n1ed_cache = JPATH_ROOT . '/images/n1ed_cache';
+
+    if(!JFolder::exists($n1ed_cache)) {
+      JFolder::create($n1ed_cache);
     }
 
     // Set N1ED as default editor for site
