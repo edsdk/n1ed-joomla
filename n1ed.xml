@@ -1,42 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension version="3.1" type="plugin" group="editors" method="upgrade">
-    <name>N1ED</name>
-    <version>1.1.0</version>
-    <creationDate>2018</creationDate>
-    <author>EdSDK</author>
-    <authorEmail>info@n1ed.com</authorEmail>
-    <authorUrl>www.n1ed.com</authorUrl>
-    <copyright>Copyright (c) 2019 EdSDK (https://n1ed.com/). All rights reserved.</copyright>
-    <license></license>
-    <description>PLG_N1ED_KEY_DESC</description>
-    <scriptfile>script.n1ed.php</scriptfile>
-    <updateservers>
-        <server type="extension" name="N1ED" priority="1">https://cdn.n1ed.com/joomla_updates/n1ed.xml</server>
-    </updateservers>
-    <files>
-        <filename plugin="n1ed">n1ed.php</filename>
-        <folder>fields</folder>
-        <folder>rules</folder>
-        <folder>uploader</folder>
-    </files>
-    <languages folder="language">
-        <language tag="en-GB" >en-GB/en-GB.plg_editors_n1ed.ini</language>
-        <language tag="en-GB" >en-GB/en-GB.plg_editors_n1ed.sys.ini</language>
-        <language tag="ru-RU" >ru-RU/ru-RU.plg_editors_n1ed.ini</language>
-        <language tag="ru-RU" >ru-RU/ru-RU.plg_editors_n1ed.sys.ini</language>
-    </languages>
-    <config>
-        <fields name="params">
-            <fieldset name="basic" addrulepath="plugins/editors/n1ed/rules" addfieldpath="plugins/editors/n1ed//fields">
-                <field
-                    name="api_key"
-                    type="apikey"
-                    label="PLG_N1ED_KEY_LABEL"
-                    required="true"
-                    filter="string"
-                    validate="apikey"
-                />
-            </fieldset>
-        </fields>
-    </config>
+  <name>N1ED</name>
+  <version>1.2.0</version>
+  <creationDate>2018</creationDate>
+  <author>EdSDK</author>
+  <authorEmail>info@n1ed.com</authorEmail>
+  <authorUrl>www.n1ed.com</authorUrl>
+  <copyright>Copyright (c) 2019 EdSDK (https://n1ed.com/). All rights reserved.</copyright>
+  <license>GPL2</license>
+  <description>PLG_N1ED_KEY_DESC</description>
+  <scriptfile>script.n1ed.php</scriptfile>
+  <updateservers>
+    <server type="extension" name="N1ED" priority="1">https://cdn.n1ed.com/joomla_updates/n1ed.xml</server>
+  </updateservers>
+  <files>
+    <filename plugin="n1ed">n1ed.php</filename>
+    <folder>fields</folder>
+    <folder>rules</folder>
+  </files>
+  <languages folder="language">
+    <language tag="en-GB" >en-GB/en-GB.plg_editors_n1ed.ini</language>
+    <language tag="en-GB" >en-GB/en-GB.plg_editors_n1ed.sys.ini</language>
+    <language tag="ru-RU" >ru-RU/ru-RU.plg_editors_n1ed.ini</language>
+    <language tag="ru-RU" >ru-RU/ru-RU.plg_editors_n1ed.sys.ini</language>
+  </languages>
+  <config>
+    <fields name="params">
+      <fieldset name="basic" addrulepath="plugins/editors/n1ed/rules" addfieldpath="plugins/editors/n1ed//fields">
+        <field
+          name="api_key"
+          type="apikey"
+          label="PLG_N1ED_KEY_LABEL"
+          required="true"
+          filter="string"
+          validate="apikey"
+        />
+      </fieldset>
+    </fields>
+  </config>
 </extension>
